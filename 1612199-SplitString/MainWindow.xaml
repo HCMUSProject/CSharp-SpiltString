@@ -1,0 +1,36 @@
+﻿<Window x:Class="_1612199_SplitString.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1612199_SplitString"
+        mc:Ignorable="d"
+        Title="Calculator" Height="270" Width="400">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <Border BorderThickness="1" BorderBrush="Gray" DockPanel.Dock="Left">
+                <StackPanel Width="370" Margin="10">
+                    <Label x:Name="lbInput" Target="{Binding ElementName=txbInput}" Margin="0,20,0,0" 
+                           HorizontalContentAlignment="Center">
+                        Nhập biểu thức:
+                    </Label>
+                    <TextBox x:Name="txbInput" Width="300" Margin="0,0,0,0">
+                        
+                    </TextBox>
+
+                    <Label Margin="0,30,0,0" HorizontalContentAlignment="Center">
+                        Kết quả:
+                    </Label>
+                    <TextBox x:Name="txbResult" Width="300" Margin="0,0,0,0" 
+                             HorizontalContentAlignment="Center" IsEnabled="False">
+
+                    </TextBox>
+
+                    <Button Width="60" Height="30" Margin="0,20,0,0" Background="Transparent" 
+                            Click="BtnSum_Click">Tính</Button>
+                    
+                </StackPanel>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>
